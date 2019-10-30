@@ -182,6 +182,8 @@ PODS:
     - React-cxxreact (= 0.61.3)
     - React-jsi (= 0.61.3)
   - React-jsinspector (0.61.3)
+  - react-native-webview (7.4.3):
+    - React
   - React-RCTActionSheet (0.61.3):
     - React-Core/RCTActionSheetHeaders (= 0.61.3)
   - React-RCTAnimation (0.61.3):
@@ -217,6 +219,9 @@ PODS:
     - React-cxxreact (= 0.61.3)
     - React-jsi (= 0.61.3)
     - ReactCommon/jscallinvoker (= 0.61.3)
+  - SensorsAnalyticsSDK/core (1.11.14)
+  - SensorsAnalyticsSDK/ENABLE_REACT_NATIVE_APPCLICK (1.11.14):
+    - SensorsAnalyticsSDK/core
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -236,6 +241,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -247,11 +253,13 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - SensorsAnalyticsSDK/ENABLE_REACT_NATIVE_APPCLICK
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - SensorsAnalyticsSDK
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -282,6 +290,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -321,6 +331,7 @@ SPEC CHECKSUMS:
   React-jsi: 8bcf5836caa8a759c135ab9ef97f3e023a7b94af
   React-jsiexecutor: ae078e9df9c65bcdcf68f9a17656657932d95528
   React-jsinspector: a8939cc6909607eb5e8a5ecfff7c6226984e174d
+  react-native-webview: dbfec7f16f09a71ea53731bdf5f86ae70eac4313
   React-RCTActionSheet: 94671eef55b01a93be735605822ef712d5ea208e
   React-RCTAnimation: 524ae33e73de9c0fe6501a7a4bda8e01d26499d9
   React-RCTBlob: 5481c2db702f57207af7e7a9b32d90524b821b72
@@ -331,8 +342,9 @@ SPEC CHECKSUMS:
   React-RCTText: b8f895b94aa0e7778fef28d13f3d71eed4a10c3d
   React-RCTVibration: 262588c97551b0b1c675468cda857466ba5af18f
   ReactCommon: c2c63d9290b422ca6ad5b3663073a015dd892ae9
+  SensorsAnalyticsSDK: 4d68ddd73659e19b009b7e0bdd1515566c82975f
   Yoga: 02036f6383c0008edb7ef0773a0e6beb6ce82bd1
 
-PODFILE CHECKSUM: b985eca45ceca441ee84c37d358c053a4a2a21aa
+PODFILE CHECKSUM: f5d8e8e7ad0f7b5ecf3e36438a25dd67381bb126
 
 COCOAPODS: 1.8.4

@@ -11,10 +11,16 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+#import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
+
+static NSString *const SAServerURL = @"http://sdktest.datasink.sensorsdata.cn/sa?token=21f2e56df73988c7&project=yangzhankun";
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [self initSensorsAnalyticsWithLaunchOptions:launchOptions];
+
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"RNGetThroughH5"
@@ -28,6 +34,18 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+- (void)initSensorsAnalyticsWithLaunchOptions:(NSDictionary *)launchOptions {
+    SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:SAServerURL launchOptions:launchOptions];
+    options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick;
+    options.enableTrackAppCrash = YES;
+    [SensorsAnalyticsSDK startWithConfigOptions:options];
+    [SensorsAnalyticsSDK.sharedInstance enableLog:YES];
+    [SensorsAnalyticsSDK.sharedInstance addWebViewUserAgentSensorsDataFlag];
+
+    [[SensorsAnalyticsSDK sharedInstance] enableHeatMap];
+    [[SensorsAnalyticsSDK sharedInstance] enableVisualizedAutoTrack];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

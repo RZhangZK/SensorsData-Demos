@@ -17,6 +17,10 @@ import {
 } from 'react-native';
 
 import {
+  WebView
+} from 'react-native-webview';
+
+import {
   Header,
   LearnMoreLinks,
   Colors,
@@ -24,50 +28,18 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+//导入神策 Android 模块 用于代码埋点
+import { NativeModules } from 'react-native';
+const RNSensorsAnalyticsModule=NativeModules.RNSensorsAnalyticsModule;
+
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+    <WebView
+      source={{uri: 'http://192.168.50.90:6789'}}
+      style={{marginTop: 20}}
+    />
+      
     </>
   );
 };
