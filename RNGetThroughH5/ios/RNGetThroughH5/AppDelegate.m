@@ -41,6 +41,7 @@ static NSString *const SAServerURL = @"http://sdktest.datasink.sensorsdata.cn/sa
     options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick;
     [SensorsAnalyticsSDK startWithConfigOptions:options];
     [SensorsAnalyticsSDK.sharedInstance enableLog:YES];
+    [SensorsAnalyticsSDK.sharedInstance addWebViewUserAgentSensorsDataFlag];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
