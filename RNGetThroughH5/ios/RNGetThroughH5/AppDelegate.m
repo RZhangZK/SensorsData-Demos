@@ -39,13 +39,8 @@ static NSString *const SAServerURL = @"http://sdktest.datasink.sensorsdata.cn/sa
 - (void)initSensorsAnalyticsWithLaunchOptions:(NSDictionary *)launchOptions {
     SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:SAServerURL launchOptions:launchOptions];
     options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick;
-    options.enableTrackAppCrash = YES;
     [SensorsAnalyticsSDK startWithConfigOptions:options];
     [SensorsAnalyticsSDK.sharedInstance enableLog:YES];
-    [SensorsAnalyticsSDK.sharedInstance addWebViewUserAgentSensorsDataFlag];
-
-    [[SensorsAnalyticsSDK sharedInstance] enableHeatMap];
-    [[SensorsAnalyticsSDK sharedInstance] enableVisualizedAutoTrack];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
