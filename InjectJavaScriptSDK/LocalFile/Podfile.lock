@@ -1,0 +1,18 @@
+PODS:
+  - SensorsAnalyticsSDK (1.11.14):
+    - SensorsAnalyticsSDK/core (= 1.11.14)
+  - SensorsAnalyticsSDK/core (1.11.14)
+
+DEPENDENCIES:
+  - SensorsAnalyticsSDK
+
+SPEC REPOS:
+  trunk:
+    - SensorsAnalyticsSDK
+
+SPEC CHECKSUMS:
+  SensorsAnalyticsSDK: 4d68ddd73659e19b009b7e0bdd1515566c82975f
+
+PODFILE CHECKSUM: f52825e3a6a1dc2ae02ecd453578045c58e609a8
+
+COCOAPODS: 1.8.4
