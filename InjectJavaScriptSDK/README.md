@@ -3,7 +3,7 @@
 此为 [iOS 在第三方 H5 页面中插入 JS 的方案说明](https://www.sensorsdata.cn/manual/ios_sdk_js.html) 的演示文档。其中：
 
 1. LocalFile 的 Demo 代表注入的 JS 代码是以文件形式存储在客户端中；
-2. Remote 的 Demo 代表注入的 JS 代码是以文件形式存储在客户的服务器中。
+2. Remote 的 Demo 代表注入的 JS 代码是以文件形式存储在客户的服务器中（在 Demo 中使用的是 GitHub Pages ）。
 
 JS 代码是通过神策后台数据接入模块的 JavaScript SDK 自动生成工具来生成的，但在存储为本地文件或上传到服务器前要把首尾的 <script> 标签删除。删除后的代码形如：
 

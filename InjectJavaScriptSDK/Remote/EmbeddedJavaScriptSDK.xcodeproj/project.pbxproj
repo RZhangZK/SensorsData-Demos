@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A055E39C7EDAE1623D79F59D /* Pods_EmbeddedJavaScriptSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DF68D32F303D29897BDF97 /* Pods_EmbeddedJavaScriptSDK.framework */; };
+		A47EE4A823727E1500FF9977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EE4A723727E1500FF9977 /* AppDelegate.m */; };
+		A47EE4AB23727E1500FF9977 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EE4AA23727E1500FF9977 /* SceneDelegate.m */; };
+		A47EE4AE23727E1500FF9977 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EE4AD23727E1500FF9977 /* UIWebViewController.m */; };
+		A47EE4B123727E1500FF9977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EE4AF23727E1500FF9977 /* Main.storyboard */; };
+		A47EE4B323727E1B00FF9977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47EE4B223727E1B00FF9977 /* Assets.xcassets */; };
+		A47EE4B623727E1B00FF9977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47EE4B423727E1B00FF9977 /* LaunchScreen.storyboard */; };
+		A47EE4B923727E1B00FF9977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EE4B823727E1B00FF9977 /* main.m */; };
+		A47EE4C12372A18200FF9977 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A47EE4C02372A18200FF9977 /* WKWebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1693CF97EF76287C1E6F6B7F /* Pods-EmbeddedJavaScriptSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbeddedJavaScriptSDK.debug.xcconfig"; path = "Target Support Files/Pods-EmbeddedJavaScriptSDK/Pods-EmbeddedJavaScriptSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		27DF68D32F303D29897BDF97 /* Pods_EmbeddedJavaScriptSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmbeddedJavaScriptSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520EA99617CF66C90AE7DC98 /* Pods-EmbeddedJavaScriptSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmbeddedJavaScriptSDK.release.xcconfig"; path = "Target Support Files/Pods-EmbeddedJavaScriptSDK/Pods-EmbeddedJavaScriptSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A47EE4A323727E1500FF9977 /* EmbeddedJavaScriptSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbeddedJavaScriptSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47EE4A623727E1500FF9977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A47EE4A723727E1500FF9977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A47EE4A923727E1500FF9977 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A47EE4AA23727E1500FF9977 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		A47EE4AC23727E1500FF9977 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		A47EE4AD23727E1500FF9977 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		A47EE4B023727E1500FF9977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47EE4B223727E1B00FF9977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47EE4B523727E1B00FF9977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A47EE4B723727E1B00FF9977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47EE4B823727E1B00FF9977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A47EE4BF2372A18200FF9977 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		A47EE4C02372A18200FF9977 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		A47EE4C52372A3F500FF9977 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47EE4A023727E1500FF9977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A055E39C7EDAE1623D79F59D /* Pods_EmbeddedJavaScriptSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A47EE49A23727E1500FF9977 = {
+			isa = PBXGroup;
+			children = (
+				A47EE4A523727E1500FF9977 /* EmbeddedJavaScriptSDK */,
+				A47EE4A423727E1500FF9977 /* Products */,
+				F4E3BD0CF7C06DA2F785B54C /* Pods */,
+				B7ACDA34ABB2FC4439FDEC41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A47EE4A423727E1500FF9977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47EE4A323727E1500FF9977 /* EmbeddedJavaScriptSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47EE4A523727E1500FF9977 /* EmbeddedJavaScriptSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A47EE4A623727E1500FF9977 /* AppDelegate.h */,
+				A47EE4A723727E1500FF9977 /* AppDelegate.m */,
+				A47EE4A923727E1500FF9977 /* SceneDelegate.h */,
+				A47EE4AA23727E1500FF9977 /* SceneDelegate.m */,
+				A47EE4BF2372A18200FF9977 /* WKWebViewController.h */,
+				A47EE4C02372A18200FF9977 /* WKWebViewController.m */,
+				A47EE4AC23727E1500FF9977 /* UIWebViewController.h */,
+				A47EE4AD23727E1500FF9977 /* UIWebViewController.m */,
+				A47EE4AF23727E1500FF9977 /* Main.storyboard */,
+				A47EE4B223727E1B00FF9977 /* Assets.xcassets */,
+				A47EE4B423727E1B00FF9977 /* LaunchScreen.storyboard */,
+				A47EE4B723727E1B00FF9977 /* Info.plist */,
+				A47EE4B823727E1B00FF9977 /* main.m */,
+				A47EE4C52372A3F500FF9977 /* PrefixHeader.pch */,
+			);
+			path = EmbeddedJavaScriptSDK;
+			sourceTree = "<group>";
+		};
+		B7ACDA34ABB2FC4439FDEC41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27DF68D32F303D29897BDF97 /* Pods_EmbeddedJavaScriptSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4E3BD0CF7C06DA2F785B54C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1693CF97EF76287C1E6F6B7F /* Pods-EmbeddedJavaScriptSDK.debug.xcconfig */,
+				520EA99617CF66C90AE7DC98 /* Pods-EmbeddedJavaScriptSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47EE4A223727E1500FF9977 /* EmbeddedJavaScriptSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47EE4BC23727E1B00FF9977 /* Build configuration list for PBXNativeTarget "EmbeddedJavaScriptSDK" */;
+			buildPhases = (
+				B037E43B2DA40D342C5FF197 /* [CP] Check Pods Manifest.lock */,
+				A47EE49F23727E1500FF9977 /* Sources */,
+				A47EE4A023727E1500FF9977 /* Frameworks */,
+				A47EE4A123727E1500FF9977 /* Resources */,
+				151F3F1931E66D1C5D48C2E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmbeddedJavaScriptSDK;
+			productName = EmbeddedJavaScriptSDK;
+			productReference = A47EE4A323727E1500FF9977 /* EmbeddedJavaScriptSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A47EE49B23727E1500FF9977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Sensors Data";
+				TargetAttributes = {
+					A47EE4A223727E1500FF9977 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = A47EE49E23727E1500FF9977 /* Build configuration list for PBXProject "EmbeddedJavaScriptSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A47EE49A23727E1500FF9977;
+			productRefGroup = A47EE4A423727E1500FF9977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47EE4A223727E1500FF9977 /* EmbeddedJavaScriptSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47EE4A123727E1500FF9977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47EE4B623727E1B00FF9977 /* LaunchScreen.storyboard in Resources */,
+				A47EE4B323727E1B00FF9977 /* Assets.xcassets in Resources */,
+				A47EE4B123727E1500FF9977 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		151F3F1931E66D1C5D48C2E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmbeddedJavaScriptSDK/Pods-EmbeddedJavaScriptSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmbeddedJavaScriptSDK/Pods-EmbeddedJavaScriptSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmbeddedJavaScriptSDK/Pods-EmbeddedJavaScriptSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B037E43B2DA40D342C5FF197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmbeddedJavaScriptSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A47EE49F23727E1500FF9977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47EE4C12372A18200FF9977 /* WKWebViewController.m in Sources */,
+				A47EE4AE23727E1500FF9977 /* UIWebViewController.m in Sources */,
+				A47EE4A823727E1500FF9977 /* AppDelegate.m in Sources */,
+				A47EE4B923727E1B00FF9977 /* main.m in Sources */,
+				A47EE4AB23727E1500FF9977 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A47EE4AF23727E1500FF9977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47EE4B023727E1500FF9977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A47EE4B423727E1B00FF9977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47EE4B523727E1B00FF9977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47EE4BA23727E1B00FF9977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A47EE4BB23727E1B00FF9977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A47EE4BD23727E1B00FF9977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1693CF97EF76287C1E6F6B7F /* Pods-EmbeddedJavaScriptSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497436C46Y;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EmbeddedJavaScriptSDK/PrefixHeader.pch";
+				INFOPLIST_FILE = EmbeddedJavaScriptSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sensorsdata.EmbeddedJavaScriptSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47EE4BE23727E1B00FF9977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 520EA99617CF66C90AE7DC98 /* Pods-EmbeddedJavaScriptSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 497436C46Y;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EmbeddedJavaScriptSDK/PrefixHeader.pch";
+				INFOPLIST_FILE = EmbeddedJavaScriptSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.sensorsdata.EmbeddedJavaScriptSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A47EE49E23727E1500FF9977 /* Build configuration list for PBXProject "EmbeddedJavaScriptSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47EE4BA23727E1B00FF9977 /* Debug */,
+				A47EE4BB23727E1B00FF9977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47EE4BC23727E1B00FF9977 /* Build configuration list for PBXNativeTarget "EmbeddedJavaScriptSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47EE4BD23727E1B00FF9977 /* Debug */,
+				A47EE4BE23727E1B00FF9977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A47EE49B23727E1500FF9977 /* Project object */;
+}
