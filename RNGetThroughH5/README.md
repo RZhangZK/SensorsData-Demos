@@ -20,7 +20,7 @@ source={{uri: '网页地址'}}
 
 ## 2.需要修改的代码
 
- [AppDelegate.m](ios/RNGetThroughH5/AppDelegate.m) 
+[AppDelegate.m](ios/RNGetThroughH5/AppDelegate.m)
 
 44 行添加：
 
@@ -28,7 +28,7 @@ source={{uri: '网页地址'}}
 [SensorsAnalyticsSDK.sharedInstance addWebViewUserAgentSensorsDataFlag];
 ```
 
- [RNCWebView.m](../node_modules/react-native-webview/ios/RNCWebView.m) 
+[RNCWebView.m](node_modules/react-native-webview/ios/RNCWebView.m)
 
 823 行添加：
 
